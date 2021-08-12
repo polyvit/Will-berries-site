@@ -1,0 +1,30 @@
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation-link {
+    text-decoration: none;
+    color: #939699;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.button {
+    padding: 10px 20px;
+    background: #4592FF;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.button-icon {
+    margin-right: 10px;
+}
