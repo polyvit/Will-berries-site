@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
 .navigation {
     list-style: none;
     padding: 0;
@@ -5,7 +9,6 @@
 .navigation-link {
     text-decoration: none;
     color: #939699;
-    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -25,6 +28,49 @@
     line-height: 20px;
     cursor: pointer;
 }
-.button-icon {
+.button-icon, .button-price {
     margin-right: 10px;
+}
+.slide {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.slide-1 {
+    background: #B4D1E0 url("../images/slide-image-1.png") no-repeat top right 20%;
+}
+.label {
+    background: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 15px;
+}
+.slide-title {
+    color: #262D33;
+    font-size: 55px;
+    line-height: 70px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.slide-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
+    max-width: 335px;
+    margin-bottom: 40px;
+}
+.slider {
+    position: relative;
+}
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.slider-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
