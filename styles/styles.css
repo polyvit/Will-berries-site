@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+.header {
+    padding: 15px 0;
+}
 .navigation {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .navigation-link {
     text-decoration: none;
@@ -30,6 +37,10 @@ body {
 }
 .button-icon, .button-price {
     margin-right: 10px;
+}
+.button-icon:last-child{
+    margin-right: 0;
+    margin-left: 10px;
 }
 .slide {
     padding-top: 90px;
@@ -73,4 +84,42 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+.card {
+    min-height: 370px;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 80px;
+}
+.card-1 {
+    background: #E3E2E3 url("../images/card-1.jpg") no-repeat top right;
+    background-size: cover;
+}
+.card-2 {
+    background: #E3E2E3 url("../images/card-2.jpg") no-repeat top right;
+    background-size: cover;
+}
+.card-title {
+    color: #262D33;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 253px;
+}
+.card-text {
+    color: #4B5157;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 176px;
+    margin-bottom: 25px;
+}
+.text-light {
+    color: #FFFFFF;
 }
