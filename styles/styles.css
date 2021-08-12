@@ -101,6 +101,17 @@ body {
     background: #E3E2E3 url("../images/card-2.jpg") no-repeat top right;
     background-size: cover;
 }
+.card-3 {
+    background: #CCD5E6 url("../images/card-3.png") no-repeat top right 10%;
+    background-size: contain;
+    padding-top: 35px;
+}
+.card-4 {
+    background: #FF4F52 url("../images/card-4.png") no-repeat top right;
+    background-size: contain;
+    padding-top: 35px;
+    padding-left: 25px;
+}
 .card-title {
     color: #262D33;
     font-family: Roboto Slab;
@@ -109,6 +120,13 @@ body {
     font-size: 25px;
     line-height: 30px;
     max-width: 253px;
+}
+.card-title.large {
+    max-width: 419px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .card-text {
     color: #4B5157;
@@ -120,6 +138,15 @@ body {
     max-width: 176px;
     margin-bottom: 25px;
 }
+.card-text.large {
+    max-width: 320px;
+}
 .text-light {
     color: #FFFFFF;
+}
+.card-price {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
 }
