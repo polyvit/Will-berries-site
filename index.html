@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -56,37 +57,70 @@
     </header>
 
 <!--Главная картинка-слайдер-->
-    <div class="slider">
-
-        <!--Картинка слайда и надпись на слайде-->
-        <section class="slide slide-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 offset-lg-1">
-                        <span class="label">Bestseller</span>
-                        <h2 class="slide-title">Sweater <br> Choker Neck</h2>
-                        <p class="slide-description">Women’s pearl basic knit sweater with around neck.
-                            Available in several colours. Free shipping to stores.</p>
-                        <button class="button">
-                            <span class="button-price">$319</span>
-                            <span class="button-text">Shop now</span>
-                        </button>
+    <div class="slider swiper-container">
+        <div class="swiper-wrapper">
+            <!--Картинка слайда и надпись на слайде-->
+            <section class="slide slide-1 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-lg-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide-title">Sweater <br> Choker Neck</h2>
+                            <p class="slide-description">Women’s pearl basic knit sweater with around neck.
+                                Available in several colours. Free shipping to stores.</p>
+                            <button class="button">
+                                <span class="button-price">$319</span>
+                                <span class="button-text">Shop now</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="slide slide-1 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-lg-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide-title">Sweater <br> Choker Neck</h2>
+                            <p class="slide-description">Women’s pearl basic knit sweater with around neck.
+                                Available in several colours. Free shipping to stores.</p>
+                            <button class="button">
+                                <span class="button-price">$319</span>
+                                <span class="button-text">Shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-1 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-lg-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide-title">Sweater <br> Choker Neck</h2>
+                            <p class="slide-description">Women’s pearl basic knit sweater with around neck.
+                                Available in several colours. Free shipping to stores.</p>
+                            <button class="button">
+                                <span class="button-price">$319</span>
+                                <span class="button-text">Shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <!--Стрелки слайда-->
         <div class="slider-nav">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-1">
-                        <button class="slider-button">
+                        <button class="slider-button slider-button-prev">
                             <img src="images/prev-arrow.svg" alt="arrow-prev">
                         </button>
                     </div>
                     <div class="col-1">
-                        <button class="slider-button">
+                        <button class="slider-button slider-button-next">
                             <img src="images/next-arrow.svg" alt="arrow-next">
                         </button>
                     </div>
@@ -249,6 +283,19 @@
             </div>
         </div>
     </footer>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js" ></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 </body>
 </html>

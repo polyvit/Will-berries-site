@@ -45,6 +45,7 @@ body {
 .slide {
     padding-top: 90px;
     padding-bottom: 110px;
+    min-height: 568px;
 }
 .slide-1 {
     background: #B4D1E0 url("../images/slide-image-1.png") no-repeat top right 20%;
@@ -79,6 +80,7 @@ body {
     position: absolute;
     top: 50%;
     width: 100%;
+    z-index: 9;
 }
 .slider-button {
     background-color: transparent;
